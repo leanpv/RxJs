@@ -11,7 +11,7 @@ const hoyEn5 = new Date();
 hoyEn5.setSeconds(hoyEn5.getSeconds() + 5);
 
 const interval$ = interval(1000);
-// es como crear un interval que inicia luego de 2 segundos
+// es como crear un interval que inicia luego de 5 segundos
 const timer$ = timer( hoyEn5 );
 
 console.log('inicio');
