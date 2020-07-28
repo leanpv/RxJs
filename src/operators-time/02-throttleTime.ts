@@ -1,11 +1,6 @@
 import { fromEvent, asyncScheduler } from 'rxjs';
 import { debounceTime, map, pluck, distinctUntilChanged, distinctUntilKeyChanged, tap, throttleTime } from 'rxjs/operators';
 
-// debounceTime
-// Si el tiempo transcurrido desde la última emisión no es mayor
-// al valor ingresado como parametro, ejemplo, debounceTime(1000)
-// 
-
 const click$ = fromEvent<MouseEvent>( document, 'click');
 
 click$.pipe(
